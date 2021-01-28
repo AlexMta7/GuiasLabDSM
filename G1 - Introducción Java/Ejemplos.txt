@@ -119,7 +119,7 @@ class Main {
 
     for(f=1;f<=10;f++){
       System.out.println("Ingrese valor");
-      valor = in.nextInt();
+      valor = teclado.nextInt();
       suma = suma + valor;
     }
     System.out.println("La suma es: "+ suma);
@@ -170,7 +170,7 @@ public class Cadena5 {
     teclado = new Scanner(System.in);
     nombres = new String[5];
     mail = new String[5];
-    for(int f=0; f<=nombres.length;f++){
+    for(int f=0; f<nombres.length;f++){
       System.out.println("Ingrese nombre");
       nombres[f] = teclado.nextLine();
       System.out.println("Ingrese mail");
@@ -179,7 +179,7 @@ public class Cadena5 {
   }
 
   public void listar(){
-    for(int f=0; f<=nombres.length;f++){
+    for(int f=0; f<nombres.length;f++){
       System.out.println(nombres[f] + " - " + mail[f]);
     }
   }
