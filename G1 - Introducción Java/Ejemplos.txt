@@ -1,0 +1,228 @@
+#Ejemplo 1
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    //Obtener el primer dato
+    System.out.println("Como te llamas?");
+    String nombre = in.nextLine();
+
+    //Obtener el segundo dato
+    System.out.println("Cuantos años tienes?");
+    int edad = in.nextInt();
+
+    //mostrar el resultado en la consola
+    System.out.println("Hola, " + nombre + ". El año que viene tendras " + (edad + 1) + " años.");
+  
+  }
+}
+
+
+#Ejemplo 01
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner teclado = new Scanner(System.in);
+    int num1, num2, suma, producto;
+    //Obtener el primer dato
+    System.out.println("Ingrese el primer valor");
+    num1 = teclado.nextInt();
+
+    //Obtener el segundo dato
+    System.out.println("Ingrese el segundo valor");
+    num2 = teclado.nextInt();
+    suma = num1 + num2;
+    producto = num1*num2;
+
+    //mostrar el resultado en la consola
+    System.out.println("La suma de los 2 valores es: " + suma);
+    System.out.println("El producto de los 2 valores es: " + producto);
+  
+  }
+}
+
+
+#Ejemplo 02
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner teclado = new Scanner(System.in);
+    float sueldo;
+    //Obtener el primer dato
+    System.out.println("Ingrese su sueldo");
+    sueldo = teclado.nextFloat();
+
+    if(sueldo>300){
+      System.out.println("Debe abonar impuestos");
+    } else{
+      System.out.println("No debe abonar impuestos");
+    } 
+  }
+}
+
+
+#Ejemplo 03
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner teclado = new Scanner(System.in);
+    int nota1, nota2, nota3;
+    //Obtener el primer dato
+    System.out.println("Ingrese la primera nota");
+    nota1 = teclado.nextInt();
+    System.out.println("Ingrese la segunda nota");
+    nota2 = teclado.nextInt();
+    System.out.println("Ingrese la tercera nota");
+    nota3 = teclado.nextInt(); 
+
+    int promedio = (nota1+nota2+nota3)/3;
+
+    if(promedio >= 7){
+      System.out.println("Promocionado");
+    } else {
+      if(promedio >= 4){
+        System.out.println("Regular");
+      } else {
+        System.out.println("Reprobado");
+      }
+    }
+  }
+}
+
+
+#Ejemplo 04
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner teclado = new Scanner(System.in);
+    int n, x;
+    //Obtener el primer dato
+    System.out.println("Ingrese el valor final");
+    n = teclado.nextInt();
+    x = 1;
+    while(x <= n){
+      System.out.println(x);
+      System.out.println("-");
+      x++;
+    }
+  }
+}
+
+
+#Ejemplo 05
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner teclado = new Scanner(System.in);
+    int suma, f, valor, promedio;
+    suma=0;
+
+    for(f=1;f<=10;f++){
+      System.out.println("Ingrese valor");
+      valor = teclado.nextInt();
+      suma = suma + valor;
+    }
+    System.out.println("La suma es: "+ suma);
+
+    promedio = suma/10;
+    System.out.println("El promedio es: "+promedio);
+  }
+}
+
+
+#Ejemplo 06
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner teclado = new Scanner(System.in);
+    int suma, cant, valor, promedio;
+    suma = 0;
+    cant = 0;
+    do {
+      System.out.print("Ingrese un valor (0 para finalizar):");
+      valor = teclado.nextInt();
+      if (valor != 0) {
+        suma = suma + valor;
+        cant++;
+      }
+    } while (valor != 0);
+    if (cant != 0) {
+      promedio = suma / cant;
+      System.out.print("El promedio de los valores ingresados es:");
+      System.out.print(promedio);
+    } else {
+        System.out.print("No se ingresaron valores.");
+      }
+  }
+}
+
+
+#Ejemplo 07
+##Clase Cadena5.java
+import java.util.Scanner;
+
+public class Cadena5 {
+  private Scanner teclado;
+  private String[] nombres;
+  private String[] mail;
+
+  public Cadena5(){
+    teclado = new Scanner(System.in);
+    nombres = new String[5];
+    mail = new String[5];
+    for(int f=0; f<nombres.length;f++){
+      System.out.println("Ingrese nombre");
+      nombres[f] = teclado.nextLine();
+      System.out.println("Ingrese mail");
+      mail[f] = teclado.nextLine();
+    }
+  }
+
+  public void listar(){
+    for(int f=0; f<nombres.length;f++){
+      System.out.println(nombres[f] + " - " + mail[f]);
+    }
+  }
+
+  public void consultaMail(){
+    String aux;
+    System.out.print("Ingrese el nombre de la persona:");
+    aux = teclado.nextLine();
+    boolean existe = false;
+    for (int f = 0; f < nombres.length; f++){
+      if(aux.equals(nombres[f])){
+        System.out.println("Mail de la persona:" + mail[f]);
+        existe = true;
+      }
+    }
+    if(existe == false){
+      System.out.println("No existe una persona con ese nombre.");
+    }
+  }
+
+  public void sinArroba(){
+    for (int f = 0; f < mail.length; f++){
+      boolean tiene = false;
+      for (int k = 0; k < mail[f].length(); k++){
+        if(mail[f].charAt(k)=='@'){
+          tiene = true;
+        }
+      }
+      if(tiene==false){
+        System.out.println(mail[f] + " no tiene @");
+      }
+    }
+  }
+}
+##Main
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Cadena5 cad = new Cadena5();
+    cad.listar();
+    cad.consultaMail();
+    cad.sinArroba();
+  }
+}
+
