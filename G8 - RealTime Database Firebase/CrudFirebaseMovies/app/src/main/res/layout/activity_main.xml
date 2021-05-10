@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutEditar"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="#2B84F5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/inputtituloPelicula"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:hint="Titulo de la pelicula"
+            android:textColor="@color/white"/>
+        <EditText
+            android:id="@+id/inputDescripcion"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:hint="Descripción de la pelicula"
+            android:textColor="@color/white"/>
+        <EditText
+            android:id="@+id/inputtituloOriginal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:hint="Titulo Original de la pelicula"
+            android:textColor="@color/white"/>
+        <EditText
+            android:id="@+id/inputDuracion"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:inputType="number"
+            android:hint="Duracion en Minutos"
+            android:textColor="@color/white"/>
+        <EditText
+            android:id="@+id/inputGenero"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:hint="Genero"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Cancelar"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/ListViewPersonas"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"/>
+</LinearLayout>

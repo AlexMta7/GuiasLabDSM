@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "527423587802",
+    "firebase_url": "https://investigacion2dsm-default-rtdb.firebaseio.com",
+    "project_id": "investigacion2dsm",
+    "storage_bucket": "investigacion2dsm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527423587802:android:c2d979e0d68718f13aece3",
+        "android_client_info": {
+          "package_name": "com.crs.crudfirebasemovies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "527423587802-9v9eumerc3lev7f1hdq9sfa8g0vvlis2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzCC0Zwada50Z6Osmgb1qUo16vDYphsPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "527423587802-9v9eumerc3lev7f1hdq9sfa8g0vvlis2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

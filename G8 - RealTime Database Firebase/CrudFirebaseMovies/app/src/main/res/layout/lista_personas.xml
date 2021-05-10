@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_margin="15dp">
+
+    <TextView
+        android:id="@+id/lblTitulos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Título: "/>
+    <TextView
+        android:id="@+id/Titulos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lblTitulos"
+        android:textSize="20sp"
+        android:text="El señor de los anillos"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/lblDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Titulos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Descripción: "/>
+    <TextView
+        android:id="@+id/Descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lblDescripcion"
+        android:layout_below="@+id/Titulos"
+        android:textSize="20sp"
+        android:text="El Señor de los Anillos es una novela de fantasía épica..."
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/lblTituloOriginal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Descripcion"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Título Original: "/>
+    <TextView
+        android:id="@+id/TituloOriginal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lblTituloOriginal"
+        android:layout_below="@+id/Descripcion"
+        android:textSize="20sp"
+        android:text="The Lord of the Rings"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/lblDuracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TituloOriginal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Duración: "/>
+    <TextView
+        android:id="@+id/Duracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lblDuracion"
+        android:layout_below="@+id/TituloOriginal"
+        android:textSize="20sp"
+        android:text="120 min"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/lblGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Duracion"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Género: "/>
+    <TextView
+        android:id="@+id/Genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lblGenero"
+        android:layout_below="@+id/Duracion"
+        android:textSize="20sp"
+        android:text="Novela, Literatura fantástica, Alta fantasía, Romance de caballería, Ficción de aventuras, Fantasía heroica"
+        android:paddingLeft="5dp"/>
+
+
+
+</RelativeLayout>
