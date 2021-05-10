@@ -4,3 +4,4 @@ En la rama principal **master** se encuentran todas las guías de laboratorio pe
 ## integrantes: 
 * Alex Roberto Mata Cerritos MC150475 01T/03L
 * Manuel Alejandro Hurtado Pineda HP150470 01T/03L
+* César Francisco Martínez Rodríguez MR160156 
